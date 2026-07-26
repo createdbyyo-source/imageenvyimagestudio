@@ -480,13 +480,13 @@ footer{text-align:center;margin-top:60px;padding:40px 20px 100px;display:flex;fl
   <!-- Squad Mode Panel -->
   <div class="card hidden" id="squadPanel" style="animation-delay:0.08s;border-color:rgba(139,107,181,0.3);">
     <div class="card-title"><span class="dot" style="background:var(--purple2)"></span> 👥 Squad Builder <span style="font-size:0.62rem;color:var(--purple2);font-family:'DM Sans',sans-serif;font-weight:600;margin-left:8px;padding:3px 10px;background:rgba(139,107,181,0.1);border:1px solid rgba(139,107,181,0.3);border-radius:100px;letter-spacing:1px">GROUP MODE</span></div>
-    <p style="font-size:0.75rem;color:var(--text2);margin-bottom:18px;line-height:1.6;">Build a squad of 2–6 characters sharing the same scene. Set each character's key details below — the scene, lighting, and art style come from the sections further down.</p>
+    <p style="font-size:0.75rem;color:var(--text2);margin-bottom:18px;line-height:1.6;">Build a squad of 2–4 characters sharing the same scene. Set each character's key details below — the scene, lighting, and art style come from the sections further down.</p>
 
     <!-- Squad size -->
     <div class="field-wrap" style="margin-bottom:20px">
       <label class="field-label">Squad Size: <span id="squadSizeVal">3</span> characters</label>
       <div class="range-wrap">
-        <input type="range" id="squadSize" min="2" max="6" value="3" oninput="updateSquadSize(this.value)">
+        <input type="range" id="squadSize" min="2" max="4" value="3" oninput="updateSquadSize(this.value)">
         <span class="range-val" id="squadSizeDisplay">3</span>
       </div>
     </div>
@@ -1148,6 +1148,50 @@ footer{text-align:center;margin-top:60px;padding:40px 20px 100px;display:flex;fl
             <div class="ta-style-chip" data-cat="Couple" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">💑</span>Couple</div>
             <div class="ta-style-chip" data-cat="Playful" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🎠</span>Playful</div>
             <div class="ta-style-chip" data-cat="Dramatic" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🎭</span>Dramatic</div>
+            <div class="ta-style-chip" data-cat="Hood Luxury" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🏙️</span>Hood Luxury</div>
+            <div class="ta-style-chip" data-cat="Trap House" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">💵</span>Trap House</div>
+            <div class="ta-style-chip" data-cat="City Girl" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🌃</span>City Girl</div>
+            <div class="ta-style-chip" data-cat="Block Party" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🎉</span>Block Party</div>
+            <div class="ta-style-chip" data-cat="Beauty Supply" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">💅</span>Beauty Supply</div>
+            <div class="ta-style-chip" data-cat="Nail Salon" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">💇‍♀️</span>Nail Salon</div>
+            <div class="ta-style-chip" data-cat="Hair Salon" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">✂️</span>Hair Salon</div>
+            <div class="ta-style-chip" data-cat="Corner Store" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🏪</span>Corner Store</div>
+            <div class="ta-style-chip" data-cat="Gas Station Glam" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">⛽</span>Gas Station Glam</div>
+            <div class="ta-style-chip" data-cat="Parking Garage" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🅿️</span>Parking Garage</div>
+            <div class="ta-style-chip" data-cat="Rooftop Baddie" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🌆</span>Rooftop Baddie</div>
+            <div class="ta-style-chip" data-cat="Money Room" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🤑</span>Money Room</div>
+            <div class="ta-style-chip" data-cat="Boss Office" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">💼</span>Boss Office</div>
+            <div class="ta-style-chip" data-cat="Creator Studio" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🎨</span>Creator Studio</div>
+            <div class="ta-style-chip" data-cat="Social Media Fame" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">📱</span>Social Media Fame</div>
+            <div class="ta-style-chip" data-cat="Airport Drip" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🧳</span>Airport Drip</div>
+            <div class="ta-style-chip" data-cat="Hotel Luxury" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🏨</span>Hotel Luxury</div>
+            <div class="ta-style-chip" data-cat="Poolside Rich" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🏊‍♀️</span>Poolside Rich</div>
+            <div class="ta-style-chip" data-cat="Yacht Life" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🛥️</span>Yacht Life</div>
+            <div class="ta-style-chip" data-cat="Club Night" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🪩</span>Club Night</div>
+            <div class="ta-style-chip" data-cat="Casino Energy" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🎰</span>Casino Energy</div>
+            <div class="ta-style-chip" data-cat="Street Racing" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🏎️</span>Street Racing</div>
+            <div class="ta-style-chip" data-cat="Western Hood" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🤠</span>Western Hood</div>
+            <div class="ta-style-chip" data-cat="Winter Streetwear" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🧣</span>Winter Streetwear</div>
+            <div class="ta-style-chip" data-cat="Summer Block" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🍦</span>Summer Block</div>
+            <div class="ta-style-chip" data-cat="Soft Life" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🛋️</span>Soft Life</div>
+            <div class="ta-style-chip" data-cat="Attitude Mode" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🙄</span>Attitude Mode</div>
+            <div class="ta-style-chip" data-cat="Relationship Drama" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">💔</span>Relationship Drama</div>
+            <div class="ta-style-chip" data-cat="Celebration Mode" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🎂</span>Celebration Mode</div>
+            <div class="ta-style-chip" data-cat="It Girl Penthouse" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">👑</span>It Girl Penthouse</div>
+            <div class="ta-style-chip" data-cat="Rich Auntie Energy" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🍸</span>Rich Auntie Energy</div>
+            <div class="ta-style-chip" data-cat="Pretty Hustler" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">💸</span>Pretty Hustler</div>
+            <div class="ta-style-chip" data-cat="Brunch Baddie" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🥂</span>Brunch Baddie</div>
+            <div class="ta-style-chip" data-cat="Airport Baddie" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🧳</span>Airport Baddie</div>
+            <div class="ta-style-chip" data-cat="Sneaker Baddie" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">👟</span>Sneaker Baddie</div>
+            <div class="ta-style-chip" data-cat="Birthday Baddie" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🎀</span>Birthday Baddie</div>
+            <div class="ta-style-chip" data-cat="Beauty CEO" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">💄</span>Beauty CEO</div>
+            <div class="ta-style-chip" data-cat="Nightlife Baddie" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🍾</span>Nightlife Baddie</div>
+            <div class="ta-style-chip" data-cat="Soft Life Baddie" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🧸</span>Soft Life Baddie</div>
+            <div class="ta-style-chip" data-cat="Hot Girl Summer" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🏖️</span>Hot Girl Summer</div>
+            <div class="ta-style-chip" data-cat="Street Princess" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🧢</span>Street Princess</div>
+            <div class="ta-style-chip" data-cat="Selfie Baddie" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🤳</span>Selfie Baddie</div>
+            <div class="ta-style-chip" data-cat="Luxury Shopping Baddie" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">🛍️</span>Luxury Shopping Baddie</div>
+            <div class="ta-style-chip" data-cat="Bossed Up Baddie" onclick="selectTaCharCategory(this)"><span class="ta-style-emoji">💻</span>Bossed Up Baddie</div>
           </div>
           <input type="text" id="taCharPoseSearch" oninput="filterChipGrid('taCharPoseSearch','taCharPoseGrid')" placeholder="🔍 Search poses in this category..." style="width:100%;padding:8px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg3);color:var(--text);font-family:'DM Sans',sans-serif;font-size:0.75rem;margin-top:10px;background-image:none;display:none;"/>
           <div class="ta-styles-grid" id="taCharPoseGrid" style="margin-top:10px;display:none;"></div>
@@ -1366,6 +1410,9 @@ footer{text-align:center;margin-top:60px;padding:40px 20px 100px;display:flex;fl
           </div>
           <div id="taMultiSub_manual">
             <p style="font-size:0.68rem;color:var(--text2);margin-bottom:8px;">Pick colors in the order letters should cycle through them.</p>
+            <label style="display:flex;align-items:center;gap:8px;font-size:0.72rem;color:var(--text2);margin-bottom:10px;cursor:pointer;">
+              <input type="checkbox" id="taMultiBlendToggle" checked style="width:auto;"/> 🌊 Blend colors smoothly into each other (instead of switching color at each letter)
+            </label>
             <div class="ta-styles-grid" id="taMultiColorGrid"><div class="ta-style-chip" data-color="amber" onclick="toggleMultiColorChip(this)">🟠 Amber</div>
               <div class="ta-style-chip" data-color="beige / tan" onclick="toggleMultiColorChip(this)">🦴 Beige / Tan</div>
               <div class="ta-style-chip" data-color="black" onclick="toggleMultiColorChip(this)">⬛ Black</div>
@@ -1672,6 +1719,10 @@ footer{text-align:center;margin-top:60px;padding:40px 20px 100px;display:flex;fl
           <label class="field-label" style="font-size:0.65rem;margin-bottom:6px;display:block;">Custom Icon / Element</label>
           <input type="text" id="taCustomIcon" placeholder="e.g. dice, lotus flower, black panther..." style="width:100%;padding:9px 12px;border-radius:8px;border:1px solid var(--border);background:var(--bg3);color:var(--text);font-family:'DM Sans',sans-serif;font-size:0.8rem;background-image:none;"/>
         </div>
+        <div style="margin-top:10px;">
+          <label class="field-label" style="font-size:0.65rem;margin-bottom:6px;display:block;">Custom Elements <span style="font-size:0.6rem;color:var(--text3);font-weight:400;text-transform:none;letter-spacing:0;">(props/objects tied to what your word actually means)</span></label>
+          <input type="text" id="taCustomElements" placeholder="e.g. matching, things that go with the text..." style="width:100%;padding:9px 12px;border-radius:8px;border:1px solid var(--border);background:var(--bg3);color:var(--text);font-family:'DM Sans',sans-serif;font-size:0.8rem;background-image:none;"/>
+        </div>
       </div>
     </div>
 
@@ -1703,7 +1754,6 @@ footer{text-align:center;margin-top:60px;padding:40px 20px 100px;display:flex;fl
           <option value="glittery sparkle background">Glitter & Sparkle</option>
           <option value="neon city lights background">Neon City Lights</option>
           <option value="outdoor golden hour background">Golden Hour Outdoor</option>
-          <option value="transparent background (PNG)">Transparent (PNG)</option>
           <option value="galaxy and stars background">Galaxy & Stars</option>
           <option value="pastel clouds background">Pastel Clouds</option>
           <option value="grunge distressed wall background">Grunge Wall</option>
@@ -2074,8 +2124,8 @@ const sceneCats = [
     { label:'✦ Lifestyle', options:['gaming room','podcast studio','classroom','beauty salon'] },
   ] },
   { id:'era', label:'Time Era', type:'select', optgroups:[
-    { label:'✦ Vintage', options:['1920s Art Deco','1950s pin-up','1960s glam','1970s disco','1980s fashion','1990s hip hop'] },
     { label:'✦ Modern', options:['modern day','y2k 2000s','2010s streetwear'] },
+    { label:'✦ Vintage', options:['1920s Art Deco','1950s pin-up','1960s glam','1970s disco','1980s fashion','1990s hip hop'] },
     { label:'✦ Fantasy & Future', options:['futuristic','cyberpunk future','retro anime','afrofuturism','medieval fantasy','royal renaissance'] },
   ] },
   { id:'camera', label:'Camera Angle', type:'select', options:['3/4 angle','bird eye view','cinematic angle','close up','fashion editorial angle','front view','full body','high angle','low angle','side profile','waist up','zoomed out','DSLR camera shot'] },
@@ -2673,6 +2723,7 @@ function resetTextArt(){
     if($('taCustomText'))$('taCustomText').value='';
     if($('taSubText'))$('taSubText').value='';
     if($('taCustomIcon'))$('taCustomIcon').value='';
+    if($('taCustomElements'))$('taCustomElements').value='';
     if($('taCharPrompt'))$('taCharPrompt').value='';
 
     ['taTextToggle','taStyleToggle','taColorToggle','taMoodToggle','taIconToggle','taLayoutToggle','taBgToggle','taProductToggle','taFontPairToggle','taPlatformToggle'].forEach(id=>{
@@ -2730,6 +2781,7 @@ function resetTextArt(){
     document.querySelectorAll('#taMultiColorGrid .ta-style-chip').forEach(c=>c.classList.remove('active'));
     _taMultiColors=[];
     if($('taMultiColorCustomInput')) $('taMultiColorCustomInput').value='';
+    if($('taMultiBlendToggle')) $('taMultiBlendToggle').checked=true;
     if($('taMultiColorOrder')) $('taMultiColorOrder').textContent='No colors selected yet — click colors above in the order you want them.';
 
     document.querySelectorAll('#taPaletteGrid .ta-style-chip').forEach(c=>c.classList.remove('active'));
@@ -4682,6 +4734,11 @@ const TA_CHAR_POSE_CATEGORIES = {
     {l:'Lacing Sneakers on the Text', d:'sitting on the text lacing up a pair of sneakers'},
     {l:'Shoe Wall Built Inside the Typography', d:'standing in front of a shoe wall built inside the typography'},
     {l:'Stepping Between Oversized Sneakers', d:'stepping from one oversized sneaker to another between the letters'},
+    {l:'Lacing a Giant Letter Like a Sneaker', d:'lacing a giant letter as if it were a sneaker'},
+    {l:'Standing on a Shoebox Letter', d:'standing on a letter shaped like a shoebox'},
+    {l:'Shoe Dangling From the Text', d:'holding a shoe that dangles from the text by its laces'},
+    {l:'Sitting Inside an Oversized Sneaker', d:'sitting inside an oversized sneaker built directly into the word'},
+    {l:'Foot Planted on the First Letter', d:'standing with one foot planted firmly on the first letter'},
   ],
   'Luxury Streetwear': [
     {l:'Sitting on Stacked Designer Luggage', d:'sitting on designer luggage stacked into the typography'},
@@ -4768,6 +4825,315 @@ const TA_CHAR_POSE_CATEGORIES = {
     {l:'Painting Graffiti Directly Onto the Word', d:'painting graffiti directly onto the surface of the word, spray can in hand'},
   ],
 
+  'Hood Luxury': [
+    {l:'Sitting across the top of a letter like a rooftop ledge', d:'sitting across the top of a letter like a rooftop ledge'},
+    {l:'Heel pressed against the word', d:'heel pressed against the word'},
+    {l:'Purse hanging from a letter corner', d:'purse hanging from a letter corner'},
+    {l:'Leaning inside an open letter', d:'leaning inside an open letter'},
+    {l:'Long nails gripping the text edge', d:'long nails gripping the text edge'},
+  ],
+  'Trap House': [
+    {l:'Counting money on top of the letters', d:'counting money on top of the letters'},
+    {l:'Standing inside a letter doorway', d:'standing inside a letter doorway'},
+    {l:'Cash bands wedged between letters', d:'cash bands wedged between letters'},
+    {l:'Sitting on stacked text like front steps', d:'sitting on stacked text like front steps'},
+    {l:'Phone cord wrapped around the typography', d:'phone cord wrapped around the typography'},
+  ],
+  'City Girl': [
+    {l:'Walking across the word like a sidewalk', d:'walking across the word like a sidewalk'},
+    {l:'Sitting on a letter shaped like a fire escape', d:'sitting on a letter shaped like a fire escape'},
+    {l:'Holding a subway pole attached to the text', d:'holding a subway pole attached to the text'},
+    {l:'Leaning against a street-sign letter', d:'leaning against a street-sign letter'},
+    {l:'Standing inside a glowing storefront letter', d:'standing inside a glowing storefront letter'},
+  ],
+  'Block Party': [
+    {l:'Dancing on top of the text', d:'dancing on top of the text'},
+    {l:'Sitting on speakers built into letters', d:'sitting on speakers built into letters'},
+    {l:'Holding a cup while leaning over the word', d:'holding a cup while leaning over the word'},
+    {l:'Using a letter as a DJ booth', d:'using a letter as a DJ booth'},
+    {l:'Legs swinging from the typography', d:'legs swinging from the typography'},
+  ],
+  'Beauty Supply': [
+    {l:'Sitting inside a giant compact-letter', d:'sitting inside a giant compact-letter'},
+    {l:'Applying lip gloss in a mirrored letter', d:'applying lip gloss in a mirrored letter'},
+    {l:'Hair bundles hanging from the text', d:'hair bundles hanging from the text'},
+    {l:'Nails resting across the word', d:'nails resting across the word'},
+    {l:'Makeup brushes tucked into letter openings', d:'makeup brushes tucked into letter openings'},
+  ],
+  'Nail Salon': [
+    {l:'Sitting at a manicure table built into the text', d:'sitting at a manicure table built into the text'},
+    {l:'Hand resting across a letter', d:'hand resting across a letter'},
+    {l:'Polish dripping down the typography', d:'polish dripping down the typography'},
+    {l:'Nail charms embedded into letters', d:'nail charms embedded into letters'},
+    {l:'Feet placed inside pedicure-bowl letters', d:'feet placed inside pedicure-bowl letters'},
+  ],
+  'Hair Salon': [
+    {l:'Sitting in a salon chair carved into the word', d:'sitting in a salon chair carved into the word'},
+    {l:'Blow-dryer cord wrapped around letters', d:'blow-dryer cord wrapped around letters'},
+    {l:'Hair flowing through letter openings', d:'hair flowing through letter openings'},
+    {l:'Standing behind a letter-shaped mirror', d:'standing behind a letter-shaped mirror'},
+    {l:'Leaning against a shampoo-bowl letter', d:'leaning against a shampoo-bowl letter'},
+  ],
+  'Corner Store': [
+    {l:'Sitting on a letter shaped like a freezer', d:'sitting on a letter shaped like a freezer'},
+    {l:'Reaching into a snack-filled letter', d:'reaching into a snack-filled letter'},
+    {l:'Carrying a bag resting against the word', d:'carrying a bag resting against the word'},
+    {l:'Leaning on a checkout-counter letter', d:'leaning on a checkout-counter letter'},
+    {l:'Standing under a neon sign attached to the text', d:'standing under a neon sign attached to the text'},
+  ],
+  'Gas Station Glam': [
+    {l:'Sitting on a letter shaped like a car hood', d:'sitting on a letter shaped like a car hood'},
+    {l:'Holding a gas nozzle connected to the word', d:'holding a gas nozzle connected to the word'},
+    {l:'Heels resting on the typography', d:'heels resting on the typography'},
+    {l:'Leaning against a pump-letter', d:'leaning against a pump-letter'},
+    {l:'Car keys hanging from a letter', d:'car keys hanging from a letter'},
+  ],
+  'Parking Garage': [
+    {l:'Sitting on the edge of chrome letters', d:'sitting on the edge of chrome letters'},
+    {l:'Standing between letters like parking pillars', d:'standing between letters like parking pillars'},
+    {l:'Car headlights shining through the word', d:'car headlights shining through the word'},
+    {l:'One foot on a letter, one on the car', d:'one foot on a letter, one on the car'},
+    {l:'Purse resting on the typography', d:'purse resting on the typography'},
+  ],
+  'Rooftop Baddie': [
+    {l:'Sitting on a skyline-shaped letter', d:'sitting on a skyline-shaped letter'},
+    {l:'Legs hanging over the word', d:'legs hanging over the word'},
+    {l:'Leaning back against a letter', d:'leaning back against a letter'},
+    {l:'Holding a drink above the text', d:'holding a drink above the text'},
+    {l:'Wind-blown hair wrapping around letters', d:'wind-blown hair wrapping around letters'},
+  ],
+  'Money Room': [
+    {l:'Sitting on a letter made from bundled cash', d:'sitting on a letter made from bundled cash'},
+    {l:'Counting money across the word', d:'counting money across the word'},
+    {l:'Cash drawer opening from a letter', d:'cash drawer opening from a letter'},
+    {l:'Standing inside a vault-shaped letter', d:'standing inside a vault-shaped letter'},
+    {l:'Bills spilling through letter cutouts', d:'bills spilling through letter cutouts'},
+  ],
+  'Boss Office': [
+    {l:'Sitting behind a desk built into the typography', d:'sitting behind a desk built into the typography'},
+    {l:'Feet resting on the word', d:'feet resting on the word'},
+    {l:'Holding paperwork against a letter', d:'holding paperwork against a letter'},
+    {l:'Standing inside a glass office letter', d:'standing inside a glass office letter'},
+    {l:'Chair tucked into the first letter', d:'chair tucked into the first letter'},
+  ],
+  'Creator Studio': [
+    {l:'Sitting on a tablet-shaped letter', d:'sitting on a tablet-shaped letter'},
+    {l:'Drawing directly onto the text', d:'drawing directly onto the text'},
+    {l:'Camera mounted to a letter', d:'camera mounted to a letter'},
+    {l:'Stylus tucked behind the typography', d:'stylus tucked behind the typography'},
+    {l:'Laptop open inside a letter opening', d:'laptop open inside a letter opening'},
+  ],
+  'Social Media Fame': [
+    {l:'Sitting inside a giant phone-letter', d:'sitting inside a giant phone-letter'},
+    {l:'Climbing out of a notification bubble', d:'climbing out of a notification bubble'},
+    {l:'Leaning on a LIVE badge attached to the text', d:'leaning on a LIVE badge attached to the text'},
+    {l:'Holding comments that hang from letters', d:'holding comments that hang from letters'},
+    {l:'Standing on stacked follower-count numbers', d:'standing on stacked follower-count numbers'},
+  ],
+  'Airport Drip': [
+    {l:'Sitting on a suitcase built into the word', d:'sitting on a suitcase built into the word'},
+    {l:'Pulling luggage through the letters', d:'pulling luggage through the letters'},
+    {l:'Boarding pass tucked into typography', d:'boarding pass tucked into typography'},
+    {l:'Standing inside an airplane-window letter', d:'standing inside an airplane-window letter'},
+    {l:'Carry-on hanging from a letter corner', d:'carry-on hanging from a letter corner'},
+  ],
+  'Hotel Luxury': [
+    {l:'Sitting on a bed built into the text', d:'sitting on a bed built into the text'},
+    {l:'Robe draped over letters', d:'robe draped over letters'},
+    {l:'Room key hanging from the word', d:'room key hanging from the word'},
+    {l:'Leaning against a marble letter', d:'leaning against a marble letter'},
+    {l:'Champagne tray sitting directly on the typography', d:'champagne tray sitting directly on the typography'},
+  ],
+  'Poolside Rich': [
+    {l:'Sitting on a letter that forms the pool edge', d:'sitting on a letter that forms the pool edge'},
+    {l:'Legs dipping through an open letter', d:'legs dipping through an open letter'},
+    {l:'Sunglasses resting on the text', d:'sunglasses resting on the text'},
+    {l:'Towel draped across typography', d:'towel draped across typography'},
+    {l:'Floating inside a letter-shaped pool', d:'floating inside a letter-shaped pool'},
+  ],
+  'Yacht Life': [
+    {l:'Standing on the word like a yacht deck', d:'standing on the word like a yacht deck'},
+    {l:'Holding a railing built into letters', d:'holding a railing built into letters'},
+    {l:'Sitting on a letter-shaped lounge seat', d:'sitting on a letter-shaped lounge seat'},
+    {l:'Rope wrapped around the typography', d:'rope wrapped around the typography'},
+    {l:'Champagne bottle nestled inside a letter', d:'champagne bottle nestled inside a letter'},
+  ],
+  'Club Night': [
+    {l:'Dancing between neon letters', d:'dancing between neon letters'},
+    {l:'Sitting on a speaker-letter', d:'sitting on a speaker-letter'},
+    {l:'Holding a bottle resting on the text', d:'holding a bottle resting on the text'},
+    {l:'One heel planted on the word', d:'one heel planted on the word'},
+    {l:'LED lights built into letter edges', d:'lED lights built into letter edges'},
+  ],
+  'Casino Energy': [
+    {l:'Sitting on slot-machine letters', d:'sitting on slot-machine letters'},
+    {l:'Throwing chips across the typography', d:'throwing chips across the typography'},
+    {l:'Standing inside a roulette-wheel letter', d:'standing inside a roulette-wheel letter'},
+    {l:'Cards tucked into the word', d:'cards tucked into the word'},
+    {l:'Dice hanging from letter corners', d:'dice hanging from letter corners'},
+  ],
+  'Street Racing': [
+    {l:'Sitting on a letter shaped like a spoiler', d:'sitting on a letter shaped like a spoiler'},
+    {l:'Leaning across a chrome word', d:'leaning across a chrome word'},
+    {l:'Holding keys above the text', d:'holding keys above the text'},
+    {l:'Tire tracks wrapping through letters', d:'tire tracks wrapping through letters'},
+    {l:'Standing inside a glowing rim-letter', d:'standing inside a glowing rim-letter'},
+  ],
+  'Western Hood': [
+    {l:'Sitting on saddle-shaped typography', d:'sitting on saddle-shaped typography'},
+    {l:'Boot resting on a letter', d:'boot resting on a letter'},
+    {l:'Lasso wrapped around the word', d:'lasso wrapped around the word'},
+    {l:'Leaning against a fence-letter', d:'leaning against a fence-letter'},
+    {l:'Hat hanging from the text', d:'hat hanging from the text'},
+  ],
+  'Winter Streetwear': [
+    {l:'Sitting inside a puffer-jacket letter', d:'sitting inside a puffer-jacket letter'},
+    {l:'Boot prints crossing the word', d:'boot prints crossing the word'},
+    {l:'Scarf wrapped around typography', d:'scarf wrapped around typography'},
+    {l:'Holding a hot drink above the letters', d:'holding a hot drink above the letters'},
+    {l:'Snow collected inside letter openings', d:'snow collected inside letter openings'},
+  ],
+  'Summer Block': [
+    {l:'Sitting on a fire-hydrant letter', d:'sitting on a fire-hydrant letter'},
+    {l:'Popsicle melting down the word', d:'popsicle melting down the word'},
+    {l:'Standing under a letter-shaped street sprinkler', d:'standing under a letter-shaped street sprinkler'},
+    {l:'Bike leaning directly against the text', d:'bike leaning directly against the text'},
+    {l:'Legs stretched across the typography', d:'legs stretched across the typography'},
+  ],
+  'Soft Life': [
+    {l:'Reclining across plush letters', d:'reclining across plush letters'},
+    {l:'Resting her head on a letter', d:'resting her head on a letter'},
+    {l:'Slippers tucked under the word', d:'slippers tucked under the word'},
+    {l:'Blanket draped over typography', d:'blanket draped over typography'},
+    {l:'Holding a drink while sitting inside the text', d:'holding a drink while sitting inside the text'},
+  ],
+  'Attitude Mode': [
+    {l:'Stepping over the word', d:'stepping over the word'},
+    {l:'Sitting backward on a letter', d:'sitting backward on a letter'},
+    {l:'Pointing at the typography', d:'pointing at the typography'},
+    {l:'Rolling eyes while leaning on the text', d:'rolling eyes while leaning on the text'},
+    {l:'One hand gripping the top edge', d:'one hand gripping the top edge'},
+  ],
+  'Relationship Drama': [
+    {l:'Two characters sitting on opposite ends of the word', d:'two characters sitting on opposite ends of the word'},
+    {l:'One climbing over the letters toward the other', d:'one climbing over the letters toward the other'},
+    {l:'Holding hands through a letter opening', d:'holding hands through a letter opening'},
+    {l:'Back-to-back against the typography', d:'back-to-back against the typography'},
+    {l:'One character pulling the other off the text', d:'one character pulling the other off the text'},
+  ],
+  'Celebration Mode': [
+    {l:'Standing inside a cake-shaped letter', d:'standing inside a cake-shaped letter'},
+    {l:'Balloons tied directly to typography', d:'balloons tied directly to typography'},
+    {l:'Sitting on the birthday number', d:'sitting on the birthday number'},
+    {l:'Confetti bursting from letter openings', d:'confetti bursting from letter openings'},
+    {l:'Holding a bottle over the word', d:'holding a bottle over the word'},
+  ],
+  'It Girl Penthouse': [
+    {l:'Sitting on the first letter like a luxe sofa', d:'sitting on the first letter like a luxe sofa'},
+    {l:'Heel pressed into the word', d:'heel pressed into the word'},
+    {l:'Champagne glass resting on a letter', d:'champagne glass resting on a letter'},
+    {l:'Sunglasses hanging off the typography', d:'sunglasses hanging off the typography'},
+    {l:'Silk robe draped across the text', d:'silk robe draped across the text'},
+  ],
+  'Rich Auntie Energy': [
+    {l:'Leaning on the word like it\'s her bar cart', d:'leaning on the word like it\'s her bar cart'},
+    {l:'Designer bag hooked on a letter', d:'designer bag hooked on a letter'},
+    {l:'Long nails tapping the top of the text', d:'long nails tapping the top of the text'},
+    {l:'One leg crossed over a letter', d:'one leg crossed over a letter'},
+    {l:'Luxury shopping bags tucked into the word', d:'luxury shopping bags tucked into the word'},
+  ],
+  'Pretty Hustler': [
+    {l:'Counting money on the letters', d:'counting money on the letters'},
+    {l:'Phone wedged between shoulder and text', d:'phone wedged between shoulder and text'},
+    {l:'Ledger, receipts, or cash tray built into the word', d:'ledger, receipts, or cash tray built into the word'},
+    {l:'Sitting on the text like she owns the building', d:'sitting on the text like she owns the building'},
+    {l:'Card reader resting on a letter', d:'card reader resting on a letter'},
+  ],
+  'Brunch Baddie': [
+    {l:'Sitting on the word with legs crossed', d:'sitting on the word with legs crossed'},
+    {l:'Mimosa glass balanced on a letter', d:'mimosa glass balanced on a letter'},
+    {l:'Purse and heels tucked into the typography', d:'purse and heels tucked into the typography'},
+    {l:'Pancake stack or croissant built into one letter', d:'pancake stack or croissant built into one letter'},
+    {l:'Sunnies resting across the text', d:'sunnies resting across the text'},
+  ],
+  'Airport Baddie': [
+    {l:'Pulling luggage through the letters', d:'pulling luggage through the letters'},
+    {l:'Passport sticking out of a letter pocket', d:'passport sticking out of a letter pocket'},
+    {l:'Sitting on the text like a suitcase bench', d:'sitting on the text like a suitcase bench'},
+    {l:'Boarding pass clipped to the word', d:'boarding pass clipped to the word'},
+    {l:'One heel up on the typography', d:'one heel up on the typography'},
+  ],
+  'Sneaker Baddie': [
+    {l:'Sitting on a giant sneaker-shaped letter', d:'sitting on a giant sneaker-shaped letter'},
+    {l:'Tying laces that wrap through the text', d:'tying laces that wrap through the text'},
+    {l:'Shoeboxes stacked into the word', d:'shoeboxes stacked into the word'},
+    {l:'Foot resting on the first letter', d:'foot resting on the first letter'},
+    {l:'Streetwear bag leaning into the typography', d:'streetwear bag leaning into the typography'},
+  ],
+  'Birthday Baddie': [
+    {l:'Sitting inside a cake-shaped letter', d:'sitting inside a cake-shaped letter'},
+    {l:'Rhinestone number charms hanging off the text', d:'rhinestone number charms hanging off the text'},
+    {l:'Gift boxes stacked around the word', d:'gift boxes stacked around the word'},
+    {l:'Confetti bursting from the letter openings', d:'confetti bursting from the letter openings'},
+    {l:'Cocktail perched on a letter edge', d:'cocktail perched on a letter edge'},
+  ],
+  'Beauty CEO': [
+    {l:'Lip gloss, compact, and lashes built into the letters', d:'lip gloss, compact, and lashes built into the letters'},
+    {l:'Sitting inside a mirrored letter', d:'sitting inside a mirrored letter'},
+    {l:'Makeup brushes tucked into the word', d:'makeup brushes tucked into the word'},
+    {l:'Perfume bottle resting on the text', d:'perfume bottle resting on the text'},
+    {l:'One hand posed over the typography like a product ad', d:'one hand posed over the typography like a product ad'},
+  ],
+  'Nightlife Baddie': [
+    {l:'Sitting on the text like a VIP booth', d:'sitting on the text like a VIP booth'},
+    {l:'Neon glow lining the letters', d:'neon glow lining the letters'},
+    {l:'Heels dangling off the edge', d:'heels dangling off the edge'},
+    {l:'Bottle service tray balanced on the word', d:'bottle service tray balanced on the word'},
+    {l:'Purse chain wrapped around typography', d:'purse chain wrapped around typography'},
+  ],
+  'Soft Life Baddie': [
+    {l:'Reclining across plush letters', d:'reclining across plush letters'},
+    {l:'Silk pillows built into the word', d:'silk pillows built into the word'},
+    {l:'Slippers resting on the text', d:'slippers resting on the text'},
+    {l:'Iced coffee or matcha on a letter', d:'iced coffee or matcha on a letter'},
+    {l:'Blanket draped through the typography', d:'blanket draped through the typography'},
+  ],
+  'Hot Girl Summer': [
+    {l:'Sitting poolside on the letters', d:'sitting poolside on the letters'},
+    {l:'Legs dipped through an open letter', d:'legs dipped through an open letter'},
+    {l:'Sunglasses and sandals on the word', d:'sunglasses and sandals on the word'},
+    {l:'Tote bag and sunscreen built into the text', d:'tote bag and sunscreen built into the text'},
+    {l:'Drink garnish hanging off a letter', d:'drink garnish hanging off a letter'},
+  ],
+  'Street Princess': [
+    {l:'Leaning against the typography with attitude', d:'leaning against the typography with attitude'},
+    {l:'Bamboo earrings or hoops echoing the letter shapes', d:'bamboo earrings or hoops echoing the letter shapes'},
+    {l:'Bubble jacket wrapped around part of the word', d:'bubble jacket wrapped around part of the word'},
+    {l:'One foot propped on the text', d:'one foot propped on the text'},
+    {l:'Glossy graffiti-style details built into the letters', d:'glossy graffiti-style details built into the letters'},
+  ],
+  'Selfie Baddie': [
+    {l:'Sitting on a giant phone-shaped letter', d:'sitting on a giant phone-shaped letter'},
+    {l:'Ring light behind the text', d:'ring light behind the text'},
+    {l:'Camera flash callouts around the word', d:'camera flash callouts around the word'},
+    {l:'Holding phone over the typography', d:'holding phone over the typography'},
+    {l:'Comments or hearts attached to the letters', d:'comments or hearts attached to the letters'},
+  ],
+  'Luxury Shopping Baddie': [
+    {l:'Shopping bags tucked inside the word', d:'shopping bags tucked inside the word'},
+    {l:'Sitting on stacked box-shaped letters', d:'sitting on stacked box-shaped letters'},
+    {l:'Heel stepping over the typography', d:'heel stepping over the typography'},
+    {l:'Perfume, shades, and cards resting on the text', d:'perfume, shades, and cards resting on the text'},
+    {l:'Tissue paper popping from letter openings', d:'tissue paper popping from letter openings'},
+  ],
+  'Bossed Up Baddie': [
+    {l:'Sitting at a desk built into the word', d:'sitting at a desk built into the word'},
+    {l:'Laptop open inside a letter', d:'laptop open inside a letter'},
+    {l:'Coffee cup on the typography', d:'coffee cup on the typography'},
+    {l:'Planner and phone stacked on the text', d:'planner and phone stacked on the text'},
+    {l:'One hand on hip, one hand on the word', d:'one hand on hip, one hand on the word'},
+  ],
+
 };
 let _taColor1 = 'black', _taColor2 = 'gold', _taColor3 = 'white';
 let _taLayout = 'character on the left, text art on the right';
@@ -4797,7 +5163,7 @@ const TA_STYLE_PROMPTS = {
   memphisBlocks: 'letters constructed from bold 1980s Memphis-design-style geometric blocks — a playful patchwork of solid-color squares, triangles, squiggles, zigzags, and dots in a punchy postmodern palette, thick black outlines separating each geometric shape, flat graphic pop-art energy',
   embroidered:  'embroidered patch lettering, stitched thread texture on fabric, varsity letter patch style, felt border outline',
   gel:          'translucent gel jelly letters, soft semi-transparent 3D lettering, glossy gummy texture, shiny candy-like gel material',
-  gold3d:       'massive 3D golden metallic letters with chrome shine, cracked gold texture, glowing light source, royal crown accents, ultra glossy reflection',
+  gold3d:       'massive 3D golden metallic letters in a bold extruded block letterform with chrome shine, cracked gold texture, glowing light source, royal crown accents, ultra glossy reflection',
   graffiti:     'bold graffiti streetwear typography, spray-painted street art letters with dripping paint edges, vibrant urban colors',
   grunge:       'grunge distressed lettering, worn torn texture, rough edges with splatter marks, gritty ink stain effect',
   kawaii:       'kawaii cartoon typography, cute bubbly letters with tiny decorative details, small hearts stars and sparkles, pastel colors',
@@ -4812,17 +5178,17 @@ const TA_STYLE_PROMPTS = {
   sticker:      'glossy sticker-style lettering, bold outlined letters with thick white border, vibrant flat colors with gloss shine',
   varsity:      'varsity block letters, bold athletic block font, team jersey style lettering, outlined with contrasting color border',
   y2k:          'Y2K chrome metallic letters, early 2000s aesthetic, holographic silver reflection, liquid chrome shine, iridescent glow',
-  rhinestone:   'rhinestone glam lettering, crystal-studded letters covered in sparkling rhinestones, dazzling bling text with diamond-like crystal embellishments, glamorous bedazzled typography',
-  chromeDrip:   'chrome drip lettering, liquid metallic chrome letters with dripping silver mercury effect, glossy mirror-finish chrome with slow drip falling from each letter',
+  rhinestone:   'rhinestone glam lettering with an elegant condensed script letterform, crystal-studded letters covered in sparkling rhinestones, dazzling bling text with diamond-like crystal embellishments, glamorous bedazzled typography',
+  chromeDrip:   'chrome drip lettering with a rounded bubble letterform, liquid metallic chrome letters with dripping silver mercury effect, glossy mirror-finish chrome with slow drip falling from each letter',
   glitterAcrylic: 'glitter acrylic text, chunky acrylic block letters packed with glitter particles, sparkly resin effect with embedded glitter, holographic glitter shimmer',
   goldFoil:     'luxury gold foil text, ultra-flat metallic gold foil stamped letters, premium pressed gold leaf texture, elegant reflective gold surface with subtle emboss',
   varsityFelt:  'varsity felt letters, soft sewn felt fabric patch lettering, vintage chenille-style felt applique, matte fabric texture with stitched edge border',
   bubbleY2K:    'bubble Y2K text, chubby inflated early 2000s bubble letters, glossy chrome-tipped puffy font, Y2K aesthetic with holographic sheen on rounded bubble forms',
-  diamondText:  'diamond-encrusted text, each letter completely covered in brilliant-cut diamonds, luxury iced-out typography, blinding diamond pavé setting, ultra bling gem-encrusted lettering',
+  diamondText:  'diamond-encrusted text with a tall elegant serif letterform, each letter completely covered in brilliant-cut diamonds, luxury iced-out typography, blinding diamond pavé setting, ultra bling gem-encrusted lettering',
   graffitiGlam: 'graffiti glam text, bold street art graffiti letters with high-fashion glamour twist, metallic paint drips, luxury spray-paint typography with gold chrome highlights',
-  holoChromeText: 'holographic chrome text, iridescent color-shifting metallic letters, rainbow holographic foil typography, chrome surface that shifts between pink purple blue and gold',
+  holoChromeText: 'holographic chrome text with a rounded futuristic sans-serif letterform, iridescent color-shifting metallic letters, rainbow holographic foil typography, chrome surface that shifts between pink purple blue and gold',
   hipHopFlyer:  'hip-hop flyer typography, bold retro hip-hop block text, 90s rap flyer aesthetic, dramatic drop shadow, vibrant color gradient on thick display letters',
-  diamondCrystal: 'diamond crystal lettering, letters formed entirely from brilliant cut crystal gems, faceted glass typography, prismatic light refraction through crystal letters',
+  diamondCrystal: 'diamond crystal lettering with a sharp angular geometric letterform, letters formed entirely from brilliant cut crystal gems, faceted glass typography, prismatic light refraction through crystal letters',
   graffitiArt:  'graffiti art lettering, wild-style graffiti mural typography, urban spray paint with multiple layered colors, throw-up bubble outline graffiti style',
   stickerBomb:  'sticker bomb text, collage of overlapping sticker-style letters, mixed bold vinyl sticker fonts layered chaotically, street sticker aesthetic',
   drippingPaint: 'dripping paint lettering, heavy paint-soaked letters with thick paint drips streaming downward, loaded paintbrush stroke texture, saturated paint puddle effect',
@@ -5107,6 +5473,10 @@ function getColorDesc() {
         return seed ? 'each letter a different auto-harmonized tint or shade of '+seed+' (lighter tint, base tone, deeper shade, soft neutral), cycling across the letters in order — NOT one flat color' : '';
       }
       if (_taMultiColors.length) {
+        const blendOn = document.getElementById('taMultiBlendToggle') ? document.getElementById('taMultiBlendToggle').checked : false;
+        if (blendOn) {
+          return 'a smooth, seamless color blend flowing continuously through the letters in this exact order: '+_taMultiColors.join(' → ')+' — the colors should melt gradually into one another like a soft gradient wash across the ENTIRE piece as one single continuous flow, from the very first letter of the first line all the way through the very last letter of the last line. Do NOT treat each stacked line or word as its own separate color zone with a hard seam between them — the blend must flow through line breaks exactly as smoothly as it flows between letters on the same line, so a single letter can even show two colors blending across its surface';
+        }
         return 'each letter a different color, cycling in this exact order across the word: '+_taMultiColors.join(', ')+' — repeat the sequence if there are more letters than colors';
       }
       return '';
@@ -5159,8 +5529,15 @@ function generateTextArtPrompt() {
     const mood=moodOn?_taMood:'';
     const layout=layoutOn?_taLayout:'';
     const bg=(world)?'':(bgOn?$('taBackground').value:'');
+    // Cinematic/photoreal mode is now driven by Background choice, not the character toggle —
+    // reflections and moody lighting only make sense when there's an actual environment/ground
+    // for light to bounce off of. Flat backdrops (white, solid color, gradient, sparkle, etc.)
+    // stay clean and crisp; real-scene backgrounds get the cinematic editorial treatment.
+    const cinematicBgs=['urban brick wall background','neon city lights background','outdoor golden hour background','grunge distressed wall background'];
+    const cinematicOn=cinematicBgs.includes(bg);
     const product=productOn?_taProduct:'';
     const customIcon=iconOn?$('taCustomIcon').value.trim():'';
+    const customElements=iconOn?($('taCustomElements')?$('taCustomElements').value.trim():''):'';
     const icons=iconOn?[..._taIcons]:[];
     const fontPair=fontPairOn?_taFontPair:'';
     const strength=_taStrength||2;
@@ -5193,7 +5570,12 @@ function generateTextArtPrompt() {
       // Regular Text Art (no World) — clean, crisp, flawless graphic-design finish instead of
       // gritty photoreal-product-photography realism, which was fighting against clean material
       // styles like chenille, embroidered, rhinestone, diamond, chrome, etc.
-      p+='DESIGN PHILOSOPHY: The entire artwork should read as a polished, professional graphic-design piece where typography is the clear hero and occupies the majority of the composition.'+(charOn?' The character should appear physically built into the letters, as if the typography was engineered around them.':'')+' Make every prop interact with the lettering as if the typography was built around it — props should lean on, tuck into, hang from, or sit directly on the letters themselves, never staged as separate floating objects off to the side.'+((!bg||bg==='clean white background')?' Render the entire composition on a clean, solid white background.':'')+' Every other element — props, background, lighting, callouts — should support the typography rather than compete with it. Keep the finish clean, crisp, and flawless: sharp precise edges, vibrant saturated colors, premium 3D rendering, glossy reflections, studio lighting, high contrast, perfect spelling, smooth polished surfaces, and pristine linework — like premium commercial graphic design or a high-end embroidered/dimensional logo, not gritty, weathered, or photoreal.\n\n';
+      if(cinematicOn){
+        p+='DESIGN PHILOSOPHY: The entire artwork should read as a cinematic, photoreal editorial photograph — like a real high-production nighttime photoshoot, not a flat clean graphic.'+(charOn?' The character should be physically seated, leaning, or posed directly on or against the massive typography, as if it were real furniture built specifically for them.':'')+' The lettering itself should look like a genuine, tangible 3D object made from real-world materials appropriate to the theme (brick, chrome, neon tubing, stone, spray-painted concrete, rhinestone, gold, etc.), sitting in a real photographed environment rather than a plain backdrop. Make every prop interact with the lettering physically — sitting on it, leaning against it, hanging from it, propped at its base — the way a person would actually use real furniture, never staged as separate floating objects off to the side. A small handwritten-style neon or spray-paint accent phrase can float near the main word for extra editorial flavor — invent a short phrase that fits the specific word and theme of this piece; do not simply reuse the mood/energy word chosen elsewhere in this prompt as the accent phrase text. Lighting should be moody, atmospheric, and cinematic — think reflective wet ground, glowing rim light, film-like depth of field, and genuine photographic detail, not a sterile studio shot.\n\n';
+      } else {
+        p+='DESIGN PHILOSOPHY: The entire artwork should read as a polished, professional graphic-design piece where typography is the clear hero and occupies the majority of the composition.'+(charOn?' The character should appear physically built into the letters, as if the typography was engineered around them.':'')+' Make every prop interact with the lettering as if the typography was built around it — props should lean on, tuck into, hang from, or sit directly on the letters themselves, never staged as separate floating objects off to the side.'+((!bg||bg==='clean white background')?' Render the entire composition on a clean, solid white background.':'')+' Every other element — props, background, lighting, callouts — should support the typography rather than compete with it. Keep the finish clean, crisp, and flawless: sharp precise edges, vibrant saturated colors, premium 3D rendering, glossy reflections, studio lighting, high contrast, perfect spelling, smooth polished surfaces, and pristine linework — like premium commercial graphic design or a high-end embroidered/dimensional logo, not gritty, weathered, or photoreal.\n\n';
+      }
+      p+='CAMERA & LEGIBILITY: The composition and camera angle can vary naturally based on the word and theme — a dynamic tilt or perspective is welcome when it fits the vibe. However, every letter must always stay fully legible: avoid extreme keystone distortion, avoid rotating or warping any letter so far that it becomes hard to read, and avoid a tilt so severe the word cannot be read at a glance. Legibility always outranks the dramatic angle.\n\n';
     }
 
     if(layout)p+='LAYOUT: '+(charOn?layout:'Text art centered in frame, no characters.')+'.\n\n';
@@ -5210,7 +5592,7 @@ function generateTextArtPrompt() {
         if(_taCouplePose){
           p+=' COUPLE INTERACTION: The couple should be '+_taCouplePose+', physically interacting with the main text so the letters read as part of the same scene, not as a separate background element.';
           p+=' SCENE INTEGRATION: Render this as ONE cohesive photoreal 3D scene — the letters and both characters must share the same lighting direction, cast shadows onto each other and onto the ground/surface, match in scale and perspective, and sit in the same physical environment. The letters should be built from a real-world material and texture that fits the chosen text style and the scene — not a flat 2D graphic with characters pasted on top. Think dimensional product photography or a cinematic still, not a poster.';
-          p+=' LETTER INTEGRATION IS MANDATORY: whatever surface the couple is sitting, leaning, or posed on must be a real, structural part of one of the actual letters spelling the text — for example nestled inside the open counter/hole of a round letter like O, D, P, Q or B, seated on the crossbar of a T or F, draped along the bowl of an R or a G, or perched on the curve of an S. When using a round letter as a seat: their backs should rest comfortably against the inside curve of the letter and their legs should extend naturally beyond the opening, as if the letter were engineered specifically to hold them. Do NOT invent a separate decorative ring, circle, frame, medallion, or platform that sits near the letters but is not itself one of the letters — every surface the couple touches must visibly be a letter from the word, recognizable as that letter\'s shape even with the couple sitting in/on it. No characters pasted on top of the scene, no duplicated or malformed hands/fingers.';
+          p+=' LETTER INTEGRATION IS MANDATORY: whatever surface the couple is sitting, leaning, or posed on must be a real, structural part of one of the actual letters spelling the text — for example nestled inside the open counter/hole of a round letter like O, D, P, Q or B, seated on the crossbar of a T or F, draped along the bowl of an R or a G, or perched on the curve of an S. When using a round letter as a seat: their backs should rest comfortably against the inside curve of the letter and their legs should extend naturally beyond the opening, as if the letter were engineered specifically to hold them. Do NOT invent a separate decorative ring, circle, frame, medallion, or platform that sits near the letters but is not itself one of the letters — every surface the couple touches must visibly be a letter from the word, recognizable as that letter\'s shape even with the couple sitting in/on it. No characters pasted on top of the scene, no duplicated or malformed hands/fingers. If a large secondary prop is part of the scene (a vehicle, a couch or chair, a desk, or any other sizable object), it must also emerge from or interlock with the letters themselves — for example a car\'s hood merging directly into the base of a letter, or a couch built structurally into a letter\'s shape — never placed as a separate object simply parked or positioned near, in front of, or behind the typography.';
         } else if(_taCoupleVibe){
           p+=' Position both characters together near the text in a way that reflects this relationship dynamic, sharing the same lighting and environment as the letters.';
         }
@@ -5221,7 +5603,7 @@ function generateTextArtPrompt() {
         if(_taSquadFormation){
           p+=' SQUAD FORMATION: '+_taSquadFormation+'.';
           p+=' SCENE INTEGRATION: Render this as ONE cohesive photoreal 3D scene — the letters and all '+squadSize+' members must share the same lighting direction, cast shadows onto each other and onto the ground/surface, match in scale and perspective, and sit in the same physical environment. The letters should be built from a real-world material and texture that fits the chosen text style and the scene — not a flat 2D graphic with characters pasted on top. Think dimensional product photography or a cinematic still, not a poster.';
-          p+=' LETTER INTEGRATION IS MANDATORY: distribute the '+squadSize+' members across DIFFERENT letters in the word according to the formation above, rather than crowding everyone into a single letter — each member (or small pair/cluster, per the formation) should occupy its own letter: nestled inside the open counter/hole of a round letter like O, D, P, Q or B, seated on the crossbar of a T or F, draped along the bowl of an R or a G, or perched on the curve of an S. Do NOT invent a separate decorative ring, circle, frame, medallion, or platform that sits near the letters but is not itself one of the letters — every surface a member touches must visibly be a letter from the word, recognizable as that letter\'s shape even with a person sitting in/on it. No characters pasted on top of the scene, no duplicated or malformed hands/fingers.';
+          p+=' LETTER INTEGRATION IS MANDATORY: distribute the '+squadSize+' members across DIFFERENT letters in the word according to the formation above, rather than crowding everyone into a single letter — each member (or small pair/cluster, per the formation) should occupy its own letter: nestled inside the open counter/hole of a round letter like O, D, P, Q or B, seated on the crossbar of a T or F, draped along the bowl of an R or a G, or perched on the curve of an S. Do NOT invent a separate decorative ring, circle, frame, medallion, or platform that sits near the letters but is not itself one of the letters — every surface a member touches must visibly be a letter from the word, recognizable as that letter\'s shape even with a person sitting in/on it. No characters pasted on top of the scene, no duplicated or malformed hands/fingers. If a large secondary prop is part of the scene (a vehicle, a couch or chair, a desk, or any other sizable object), it must also emerge from or interlock with the letters themselves — for example a car\'s hood merging directly into the base of a letter, or a couch built structurally into a letter\'s shape — never placed as a separate object simply parked or positioned near, in front of, or behind the typography.';
         }
         p+='\n\n';
       } else if(pastedChar){
@@ -5229,7 +5611,15 @@ function generateTextArtPrompt() {
         if(_taCharPose){
           p+=' CHARACTER INTERACTION: The character should be '+_taCharPose+', physically interacting with the main text so the letters read as part of the same scene, not as a separate background element.';
           p+=' SCENE INTEGRATION: Render this as ONE cohesive photoreal 3D scene — the letters and the character must share the same lighting direction, cast shadows onto each other and onto the ground/surface, match in scale and perspective, and sit in the same physical environment. The letters should be built from a real-world material and texture that fits both the chosen text style and the character\'s action (e.g. actual bricks if building, real balloons if hanging, real denim stitching if leaning, real spray paint and drips if painting) — not a flat 2D graphic with a character pasted on top. Think dimensional product photography or a cinematic still, not a poster.';
-          p+=' LETTER INTEGRATION IS MANDATORY: whatever surface the character is sitting, leaning, or posed on must be a real, structural part of one of the actual letters spelling the text — for example nestled inside the open counter/hole of a round letter like O, D, P, Q or B, seated on the crossbar of a T or F, draped along the bowl of an R or a G, or perched on the curve of an S. When using a round letter as a seat: the back should rest comfortably against the inside curve of the letter and the legs should extend naturally beyond the opening, as if the letter were engineered specifically to hold them. Do NOT invent a separate decorative ring, circle, frame, medallion, or platform that sits near the letters but is not itself one of the letters — the surface the character touches must visibly be a letter from the word, recognizable as that letter\'s shape even with the character sitting in/on it. No character pasted on top of the scene, no duplicated or malformed hands/fingers.';
+          p+=' LETTER INTEGRATION IS MANDATORY: whatever surface the character is sitting, leaning, or posed on must be a real, structural part of one of the actual letters spelling the text — for example nestled inside the open counter/hole of a round letter like O, D, P, Q or B, seated on the crossbar of a T or F, draped along the bowl of an R or a G, or perched on the curve of an S. When using a round letter as a seat: the back should rest comfortably against the inside curve of the letter and the legs should extend naturally beyond the opening, as if the letter were engineered specifically to hold them. Do NOT invent a separate decorative ring, circle, frame, medallion, or platform that sits near the letters but is not itself one of the letters — the surface the character touches must visibly be a letter from the word, recognizable as that letter\'s shape even with the character sitting in/on it. No character pasted on top of the scene, no duplicated or malformed hands/fingers. If a large secondary prop is part of the scene (a vehicle, a couch or chair, a desk, or any other sizable object), it must also emerge from or interlock with the letters themselves — for example a car\'s hood merging directly into the base of a letter, or a couch built structurally into a letter\'s shape — never placed as a separate object simply parked or positioned near, in front of, or behind the typography.';
+        }
+        p+='\n\n';
+      } else if(charOn){
+        p+='CHARACTER: Invent an attractive African American/Black character that naturally fits the word, theme, and mood of this piece. Vary the specific look each time — choose a different hairstyle, hair color, body type, deep-to-light skin tone, facial features, and styling aesthetic than a generic default, so this character does not look like the same person every time this is generated. Style, styling, and vibe should feel intentional and cohesive with everything else in the scene.';
+        if(_taCharPose){
+          p+=' CHARACTER INTERACTION: The character should be '+_taCharPose+', physically interacting with the main text so the letters read as part of the same scene, not as a separate background element.';
+          p+=' SCENE INTEGRATION: Render this as ONE cohesive photoreal 3D scene — the letters and the character must share the same lighting direction, cast shadows onto each other and onto the ground/surface, match in scale and perspective, and sit in the same physical environment. The letters should be built from a real-world material and texture that fits both the chosen text style and the character\'s action (e.g. actual bricks if building, real balloons if hanging, real denim stitching if leaning, real spray paint and drips if painting) — not a flat 2D graphic with a character pasted on top. Think dimensional product photography or a cinematic still, not a poster.';
+          p+=' LETTER INTEGRATION IS MANDATORY: whatever surface the character is sitting, leaning, or posed on must be a real, structural part of one of the actual letters spelling the text — for example nestled inside the open counter/hole of a round letter like O, D, P, Q or B, seated on the crossbar of a T or F, draped along the bowl of an R or a G, or perched on the curve of an S. When using a round letter as a seat: the back should rest comfortably against the inside curve of the letter and the legs should extend naturally beyond the opening, as if the letter were engineered specifically to hold them. Do NOT invent a separate decorative ring, circle, frame, medallion, or platform that sits near the letters but is not itself one of the letters — the surface the character touches must visibly be a letter from the word, recognizable as that letter\'s shape even with the character sitting in/on it. No character pasted on top of the scene, no duplicated or malformed hands/fingers. If a large secondary prop is part of the scene (a vehicle, a couch or chair, a desk, or any other sizable object), it must also emerge from or interlock with the letters themselves — for example a car\'s hood merging directly into the base of a letter, or a couch built structurally into a letter\'s shape — never placed as a separate object simply parked or positioned near, in front of, or behind the typography.';
         }
         p+='\n\n';
       }
@@ -5279,6 +5669,8 @@ function generateTextArtPrompt() {
     if(icons.length>0)p+='DECORATIVE ELEMENTS: Weave these elements naturally into the composition: '+icons.join(', ')+'. Place them around the text'+(charOn?' and character':'')+' to enhance the theme.\n\n';
 
     if(customIcon)p+='CUSTOM ELEMENT (this describes an object or style to add to the scene — it is NOT text to render as typography, do not letter it out or add it as a word anywhere in the design): '+customIcon+'. If this describes a specific concrete object (like basketball or lotus flower), include a real rendering of that object woven into the composition. If instead it reads as a style, mood, or thematic instruction rather than a literal object (like matching or things that go with the theme), use it as guidance for choosing decorative elements that fit that description — do not try to depict the phrase itself as text or letters.\n\n';
+    if(customElements)p+='CUSTOM ELEMENTS: '+customElements+' — this is NOT text to render as typography. If this describes a specific concrete object, include a real rendering of that object woven into the composition. If instead it says something like "matching" or "things that go with the text" rather than naming a literal object, look at the actual MAIN TEXT word/phrase above and choose real props that reference or relate to its literal meaning — for example, a piece that says "Whole Package" could call for wrapped gift boxes labeled with recognizable luxury brand names (Gucci, Dior, Louis Vuitton, Chanel, Hermès), or a piece that says "Sneaker Head" could call for sneaker boxes, spray paint cans, and shoe-culture props. Pick objects that make sense given what the actual words say, not generic decoration.\n\n';
+    p+='THEMATIC PROPS: Any additional supporting props, background objects, or decorative details you choose to include beyond what is explicitly specified above should relate to the literal meaning of the MAIN TEXT word/phrase, not generic luxury decoration. For example, "Chasin Bigger Bags" calls for cash, luggage, and shopping bags; "R&B Forever" calls for vinyl records and music memorabilia; "Soft Life" calls for candles, plush textures, and self-care items. Choose objects a thoughtful art director would pick specifically for this word, not a default set reused across every piece.\n\n';
 
     const calloutsOn=$('taCalloutsToggle')?$('taCalloutsToggle').checked:false;
     if(calloutsOn){
@@ -5314,7 +5706,11 @@ function generateTextArtPrompt() {
       p+=' RENDER QUALITY: physically-based rendering with ray-traced reflections, global illumination, HDR lighting, cinematic color grading, an ultra-sharp focal plane, and hyper-detailed materials with rich dimensionality. PHYSICS: no clipping and no intersecting geometry — every object and character is physically supported with realistic gravity, weight, and contact points. COMPOSITION NEGATIVES: avoid generic AI-poster composition, avoid visual clutter, avoid unnecessary floating objects, avoid duplicate or repeated props, avoid oversized icon-like objects that dwarf the scene, avoid flat poster layouts, avoid typography that looks disconnected or pasted onto the scene, and avoid awkward random empty space — every part of the frame should feel intentional.';
     } else {
       // Regular Text Art (no World) — same substantive asks, condensed into fewer stacked directives.
-      p+='QUALITY: '+hint.quality+' Render with physically-based lighting, ray-traced reflections, and hyper-detailed materials for a polished, photoreal finish — every object physically grounded with realistic shadows and weight, no clipping or floating elements. Avoid generic AI-poster composition, visual clutter, or typography that looks pasted onto the scene; every part of the frame should feel intentional.';
+      if(cinematicOn){
+        p+='QUALITY: '+hint.quality+' Every design should feel like a high-end, premium commercial product — flawless execution, expert-level craftsmanship, and top-tier production value, rendered as genuine photoreal editorial photography. Render with physically-based lighting, ray-traced reflections, and hyper-detailed materials for a polished, photoreal, cinematic finish — every object and the character physically grounded with realistic shadows, weight, and contact with the letters, no clipping or floating elements. Avoid generic AI-poster composition or visual clutter; every part of the frame should feel like a real photographed moment, not a flat graphic.';
+      } else {
+        p+='QUALITY: '+hint.quality+' Every design, regardless of theme or style, should feel like a high-end, premium commercial product — flawless execution, expert-level craftsmanship, and top-tier production value. This is about the QUALITY of the execution, not the subject matter: a graffiti piece should look like a masterfully done graffiti piece, a denim piece should look like premium designer denim work — polished and expensive-looking within its own style, not necessarily gold or diamonds unless that style was chosen. Render with physically-based lighting, ray-traced reflections, and hyper-detailed materials for a polished, crisp, professional finish — every object physically grounded with realistic shadows and weight, no clipping or floating elements. Avoid generic AI-poster composition, visual clutter, or typography that looks pasted onto the scene; every part of the frame should feel intentional and premium.';
+      }
     }
     if(text)p+='\nCRITICAL: The text must read EXACTLY: "'+taDisplayText+'". Spell every word exactly as written. Do not change, abbreviate, rearrange, add, or drop any letters.';
 
